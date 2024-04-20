@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get" class="form">
+            <div class="image">
+                <img src="images/picture1.jpeg" class="image" alt=""> <br>
+                <div class="pres">
+                    <span >Bola Ahmed Tinubu</span>
+                    <em>President of Nigeria
+                </div>
+                </em>
+            </div>
+            <h3 >Please, tell us what you know about our Amiable President.</h3>
+            <div class="form-fields">
+                <label for="">Comment</label><br>
+                <textarea name="" id="inputText" cols="40" rows="10" required></textarea><br>
+                <label for="">Scramble</label><br>
+                <input type="text" id="wordsToRedact" required placeholder="Texts you do not want the people to see"> <br> <br>
+
+                <div class="input-submit">
+                    <button onclick="redact()" id="myBtn" class="submit">Submit</button>
+                </div>
+
+            </div>
+            <span class="output">
+                <span class="para" id="output">  </span> <br>
+                <div id="stats"></div>
+            </span>
+        </form>
+
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
